@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML5 Layout</title>
+    <style type="text/css">
+        body, section, footer, aside, nav, article, figure, figcaption {
+            display: block;
+        }
+        body{
+            color: #666666;
+            background-color: #f9f8f6;
+            background-image: url("images/background.jpg");
+            background-position: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 1.4em;
+            margin: 0px;            
+        }
+        .wrapper{
+            width: 940px;
+            margin: 20px auto 20px auto;
+            /*background-color: #ffffff;*/
+            border: 2px solid #000000;
+        }
+        header {
+            height: 160px;
+            background-image: url("images/header.png");
+        }
+        h1 {
+            text-indent: -9999px;
+            width: 940px;
+            height: 130px;
+            margin: 0;
+        }
+        nav, footer {
+            clear: both;
+            color: #ffffff;
+            background-color: #aeaca8;;
+        }
+        nav ul {
+            margin: 0px;
+            padding: 5px 0px 5px 30px;
+        }
+        nav li {
+            display: inline;
+            margin-right: 40px;
+        }
+        nav li a{
+            color: #ffffff;
+        }
+        nav li a:hover{
+            color: #000000;
+        }
+        nav li a.current {
+            color: #000000;
+        }
+        a {
+            color: #de6581;
+            text-decoration: none;
+        }
+        section.courses {
+            float: left;
+            width: 659px;
+            border-right: 1px solid #eeeeee;
+        }
+        article {
+            clear: both;
+            overflow: auto;
+            width: 100%;
+        }
+        hgroup {
+            margin-top: 40px;
+        }
+        figure {
+            float: left;
+            width: 220px;
+            height: 220px;
+            padding: 5px;
+            margin: 20px;
+            border: 1px solid #eeeeee ;
+        }
+        figure img {
+            width: 220px;
+            height: 220px;
+        }
+        figcaption{
+            font-size: 90%;
+            text-align: left;
+        }
+        aside {
+            width: 230px;
+            float: left;
+            padding:  0px 0px 0px 20px;
+        }
+        aside section a {
+            display: block;
+            padding: 10px;
+            border-bottom: 1px solid #eeeeee;
+        }
+        aside section a:hover {
+            color: #985d6a;
+            background-color: #efefef;
+        }
+        h1, h2, h3 {
+            font-weight: normal;
+        }
+        h2 {
+            margin: 10px 0px 5px 0px;
+            padding: 0px;
+        }
+        h3 {
+            margin: 0px 0px 10px 0px;
+            color: #de6581;
+        }
+        aside h2 {
+            padding: 30px 0px 10px 0px;
+            color: #de6581;
+        }
+        footer{
+            font-size: 80%;
+            padding: 7px 0px 0px 20px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>TITV Kitchen</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="current">Trang chủ</a></li>
+                    <li><a href="#" class="">Thực đơn</a></li>
+                    <li><a href="#" class="">Đặt chỗ</a></li>
+                    <li><a href="#" class="">Giới thiệu</a></li>
+                    <li><a href="#" class="">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="courses">
+            <a href="#">
+                <article>
+                    <figure>
+                        <img src="images/com-tam-sai-gon-2.jpg" />
+                        <figcaption>Bánh xèo nam bộ</figcaption>
+                    </figure>
+                    <hgroup>
+                        <h2>Cách làm cơm tấm</h2>
+                        <h3>Thời gian: 60 phút</h3>
+                    </hgroup>
+                    <p>
+                         Sườn cốt lết rửa sạch, chia sườn thành từng lát dầy khoảng gần 1cm. Thấm cho sườn khô ráo rồi đem ướp.
+                        </br>
+                         Gia vị ướp sườn: 01 muỗng canh nước tương + 01 muỗng canh mật ong + 01 muỗng canh dầu hào + 01 muỗng canh nước mắm + 02 muỗng canh dầu ăn + ½ muỗng canh dầu mè + 03 muỗng canh sữa tươi + 01 muỗng canh tỏi bằm + 1/2 muỗng cà phê tiêu xay + ½ muỗng cà phê ngũ vị hương + 01 lon nước ngọt coca.
+                    </br>
+                         Cho sườn vào hỗn hợp gia vị ướp để tủ lạnh ngăn mát qua một ngày cho thịt thấm gia vị.
+                    </p>
+                </article>
+            </a>
+            <a href="#">
+                <article>
+                    <figure>
+                        <img src="images/hu-tieu.png" />
+                        <figcaption>Mì xào chay kiểu hoa</figcaption>
+                    </figure>
+                    <hgroup>
+                        <h2>Cách làm mì xào</h2>
+                        <h3>Thời gian: 30 phút</h3>
+                    </hgroup>
+                    <p>
+                        Đun nóng dầu trong chảo rồi cho gốc hành lá vào phi thơm.
+Cho cà rốt và nấm vào xào cùng, thêm chút nước tương và dầu mè vào. Nếu bước này bạn có ớt chuông thì cho vào luôn.
+Cho toàn bộ mì vào chảo, trộn đều, nếu khô quá thêm nướng tương vào để mì không bị quá khô hoặc kết dính lại với nhau. Nêm nếm muối cho vừa ăn nữa là được.
+                    </p>
+                </article>
+            </a>
+        </section>
+        <aside>
+            <section class="popular">
+                <h2>Món ăn ngon</h2>
+                <a>Bún chả Hà Nội</a>
+                <a>Bún măng vịt</a>
+                <a>Bún bò Huế</a>
+                <a>Bánh canh</a>
+                <a>Nem chay</a>
+            </section>
+            <section class="contact">
+                <h2>Liên hệ</h2>
+                <p>TITV Kitchen <br />
+                    01 Lê Văn Việt <br />
+                    Tp. Hồ Chí Minh
+                    <br /> ĐT: 0123456789
+                </p>
+            </section>
+        </aside>
+        <footer>
+            &copy; 2050 TITV Kitchen
+        </footer>
+    </div>
+</body>
+
+</html>
